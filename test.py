@@ -34,3 +34,19 @@ class TestUser(unittest.TestCase):
 	Args:
 	    unittest.TestCase: helps in creating test cases
 	'''
+    def test_check_user(self):
+		'''
+		Function to test whether the login in function check_user works as expected
+		'''
+		self.new_user = User('Mary','Ng\'ang\'a','pswd100')
+		self.new_user.save_user()
+		user2 = User('Ken','Ng\'ang\'a','pswd100')
+		user2.save_user()
+
+		for user in User.users_list:
+			if user.first_name == user2.first_name and user.password == user2.password:
+				current_user = user.first_name
+		return current_user
+
+		self.assertEqual(current_user,Credential.check_user(user2.password,user2.first_name))
+
