@@ -40,3 +40,22 @@
 
 - Exit application	Enter: ex	Exit the current navigation stage
 
+## SetUp / Installation Requirements
+
+- Prerequisites
+
+- python3.6
+
+- pip
+
+- pyperclip
+
+- xclip
+
+- Cloning
+
+## In your terminal:
+
+  - $ git clone https://github.com/marynganga/Password-Locker/
+  - $ cd Password-Locker
+
