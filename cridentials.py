@@ -115,6 +115,14 @@ while True:
 								break
 							elif psw_choice == 'ex':
 								break 
+                                else:
+								print('Oops! Wrong option entered. Try again.')
+						save_credential(create_credential(user_name,site_name,account_name,password))
+						print(' ')
+						print(f'Credential Created: Site Name: {site_name} - Account Name: {account_name} - Password: {password}')
+						print(' ')
+					elif short_code == 'dc':
+						print(' ')
 
 
 
