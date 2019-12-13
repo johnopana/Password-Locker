@@ -139,7 +139,11 @@ while True:
 						print(' ')
 						chosen_site = input('Enter the site name for the credential password to copy: ')
 						copy_credential(chosen_site)
-						print('')	
+						print('')
+
+                       else:
+						print('Oops! Wrong option entered. Try again.')
+ 	
 
 
 
