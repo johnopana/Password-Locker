@@ -56,6 +56,6 @@
 
 ## In your terminal:
 
-  - $ git clone https://github.com//Password-Locker/
+  - $ git clone https://github.com/johnopana/Password-Locker/
   - $ cd Password-Locker
 
