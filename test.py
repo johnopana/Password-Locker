@@ -38,9 +38,9 @@ class TestUser(unittest.TestCase):
 		'''
 		Function to test whether the login in function check_user works as expected
 		'''
-		self.new_user = User('Mary','Ng\'ang\'a','pswd100')
+		self.new_user = User('John','Op\'an\'a','pswd100')
 		self.new_user.save_user()
-		user2 = User('Ken','Ng\'ang\'a','pswd100')
+		user2 = User('Ken','Op\'an\'a','pswd100')
 		user2.save_user()
 
 		for user in User.users_list:
