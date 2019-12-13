@@ -35,3 +35,15 @@ def verify_user(first_name,password):
 	'''
 	new_credential=Credential(user_name,site_name,account_name,password)
 	return new_credential
+
+    def save_credential(credential):
+	'''
+	Function to save a newly created credential
+	'''
+	Credential.save_credentials(credential)
+
+def display_credentials(user_name):
+	'''
+	Function to display credentials saved by a user
+	'''
+	return Credential.display_credentials(user_name)
