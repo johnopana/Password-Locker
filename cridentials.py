@@ -84,3 +84,14 @@ def display_credentials(user_name):
 				print(" ")
 				print(f'Welcome {user_name}. Please choose an option to continue.')
 				print(' ')
+while True:
+					print("-"*60)
+					print('Navigation codes: \n cc-Create a Credential \n dc-Display Credentials \n copy-Copy Password \n ex-Exit')
+					short_code = input('Enter a choice: ').lower().strip()
+					print("-"*60)
+					if short_code == 'ex':
+						print(" ")
+						print(f'Goodbye {user_name}')
+						break
+
+
