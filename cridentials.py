@@ -129,6 +129,10 @@ while True:
 							print(' ')
 							for credential in display_credentials(user_name):
 								print(f'Site Name: {credential.site_name} - Account Name: {credential.account_name} - Password: {credential.password}')
+							print(' ')
+                            else:
+							print(' ')
+							print("You don't seem to have any credentials saved yet")
 							print(' ')	
 
 
