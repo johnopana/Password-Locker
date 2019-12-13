@@ -12,14 +12,14 @@ class TestUser(unittest.TestCase):
 		'''
 		Function to create a user account before each test
 		'''
-		self.new_user = User('Mary','Ng\'ang\'a','pswd100')
+		self.new_user = User('John','Op\'an\'a','pswd100')
 
 	def test__init__(self):
 		'''
 		Test to if check the initialization/creation of user instances is properly done
 		'''
-		self.assertEqual(self.new_user.first_name,'Mary')
-		self.assertEqual(self.new_user.last_name,'Ng\'ang\'a')
+		self.assertEqual(self.new_user.first_name,'John')
+		self.assertEqual(self.new_user.last_name,'Op\'an\'a')
 		self.assertEqual(self.new_user.password,'pswd100')
 
 	def test_save_user(self):
@@ -28,3 +28,9 @@ class TestUser(unittest.TestCase):
 		'''
 		self.new_user.save_user()
 		self.assertEqual(len(User.users_list),1)
+        class TestCredentials(unittest.TestCase):
+	'''
+	Test class that defines test cases for the credentials class behaviours.
+	Args:
+	    unittest.TestCase: helps in creating test cases
+	'''
