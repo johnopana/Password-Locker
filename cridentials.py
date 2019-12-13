@@ -94,4 +94,12 @@ while True:
 						print(f'Goodbye {user_name}')
 						break
 
+                        elif short_code == 'cc':
+						print(' ')
+						print('Enter your credential details:')
+						site_name = input('Enter the site\'s name- ').strip()
+						account_name = input('Enter your account\'s name - ').strip()
+						while True:
 
+
+git add .
