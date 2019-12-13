@@ -133,7 +133,13 @@ while True:
                             else:
 							print(' ')
 							print("You don't seem to have any credentials saved yet")
-							print(' ')	
+							print(' ')
+
+                            elif short_code == 'copy':
+						print(' ')
+						chosen_site = input('Enter the site name for the credential password to copy: ')
+						copy_credential(chosen_site)
+						print('')	
 
 
 
