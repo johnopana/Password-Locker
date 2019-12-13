@@ -49,4 +49,18 @@ class TestUser(unittest.TestCase):
 		return current_user
 
 		self.assertEqual(current_user,Credential.check_user(user2.password,user2.first_name))
+        def setUp(self):
+		'''
+		Function to create an account's credentials before each test
+		'''
+		self.new_credential = Credential('John','Facebook','johnopana','pswd100')
+
+	def test__init__(self):
+		'''
+		Test to if check the initialization/creation of credential instances is properly done
+		'''
+		self.assertEqual(self.new_credential.user_name,'John')
+		self.assertEqual(self.new_credential.site_name,'Facebook')
+		self.assertEqual(self.new_credential.account_name,'johnopana')
+		self.assertEqual(self.new_credential.password,'pswd100')
 
