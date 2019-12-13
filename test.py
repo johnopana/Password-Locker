@@ -64,3 +64,19 @@ class TestUser(unittest.TestCase):
 		self.assertEqual(self.new_credential.account_name,'johnopana')
 		self.assertEqual(self.new_credential.password,'pswd100')
 
+def test_save_credentials(self):
+		'''
+		Test to check if the new credential info is saved into the credentials list
+		'''
+		self.new_credential.save_credentials()
+		twitter = Credential('Harun','Twitter','johnopana','pswd100')
+		twitter.save_credentials()
+		self.assertEqual(len(Credential.credentials_list),2)
+
+	# def test_generate_password(self):
+	# 	'''
+	# 	Test to check if the generate password generates 8 character long alphanumeric numbers
+	# 	'''
+	# 	self.twitter = Credential('Twitter','johnopana','')
+	# 	self.twitter.password = generate_password()
+	# 	self.assertEqual()
