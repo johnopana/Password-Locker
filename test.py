@@ -28,3 +28,14 @@ Test to check if the new users info is saved into the users list
 '''
 self.new_user.save_user()
 self.assertEqual(len(User.users_list),1)
+
+class TestCredentials(unittest.TestCase):
+'''
+Test class that defines test cases for the credentials class behaviours.
+Args:
+   unittest.TestCase: helps in creating test cases
+'''
+def test_check_user(self):
+'''
+Function to test whether the login in function check_user works as expected
+'''
