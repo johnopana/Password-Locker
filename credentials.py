@@ -116,4 +116,18 @@ password = generate_password()
 break
 elif psw_choice == 'ex':
 break
+else:
+print('Oops! Wrong option entered. Try again.')
+save_credential(create_credential(user_name,site_name,account_name,password))
+print(' ')
+print(f'Credential Created: Site Name: {site_name} - Account Name: {account_name} - Password: {password}')
+print(' ')
+elif short_code == 'dc':
+print(' ')
+if display_credentials(user_name):
+print('Here is a list of all your credentials')
+print(' ')
+for credential in display_credentials(user_name):
+print(f'Site Name: {credential.site_name} - Account Name: {credential.account_name} - Password: {credential.password}')
+print(' ')
 
