@@ -78,4 +78,15 @@ print(" ")
 print(f'New Account Created for: {first_name} {last_name} using password: {password}')
 elif short_code == 'li':
 print("-"*60)
+print(' ')
+print('To login, enter your account details:')
+user_name = input('Enter your first name - ').strip()
+password = str(input('Enter your password - '))
+user_exists = verify_user(user_name,password)
+if user_exists == user_name:
+print(" ")
+print(f'Welcome {user_name}. Please choose an option to continue.')
+print(' ')
+while True:
+print("-"*60)
 
