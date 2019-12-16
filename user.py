@@ -46,5 +46,12 @@ if (user.first_name == first_name and user.password == password):
 current_user = user.first_name
 return current_user
 
+def __init__(self,user_name,site_name,account_name,password):
+'''
+Method to define the properties for each user object will hold.
+'''
+
+
+
 
 
