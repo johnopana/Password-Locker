@@ -38,4 +38,6 @@
   - $ python3.6 user_credentials_test.py
 ## Technologies Used
   - Python3.6 
+## License
+  - MIT ©2019 Opana John
 
